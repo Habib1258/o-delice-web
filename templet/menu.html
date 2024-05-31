@@ -5,39 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="images/odelice.png" >
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="icon" href="/images/odelice.png" >
+    <script src="/js/index.js"></script>
+
     <title>O'delice</title>
     
 </head>
 <body>
-    <header id="header">
-        <a href="home.html"><img class="logo" src="/images/odelice.png" width="100%"></a>
+    <header>
+        <nav>
+            <img id="logo" class="logo" src="/images/odelice.png" width="100%">
         
-        <ul class="list">
-            <a href="log.html"><li class="list-item-u">LogIn</li></a>
-            <a href="about.html"><li class="list-item"><h5 >About</h5></li></a>
-            <a href="gallery.html"><li class="list-item"><h5 >Gallery</h5></li></a>
-            <a href="menu.html" ><li class="list-item"><h5  class="active">Menu</h5></li></a>
-            <a href="home.html"><li class="list-item" ><h5 >Home</h5></li></a>
-           
-        </ul>
+            <ul class="list">
+                <a href="log.html"><li class="list-item-u">LogIn</li></a>
+                <a href="about.html"><li class="list-item">About</li></a>
+                <a href="gallery.html"><li class="list-item">Gallery</li></a>
+                <a href="menu.html" class="active"><li class="list-item">Menu</li></a>
+                <a href="home.html"><li class="list-item" >Home</li></a>
+            
+            </ul>
+        </nav>
     </header>
 
     <section class="item">
-        <h1></h1>
-        <pizza></pizza>
-        <div class="menu-item"></div>
+        <div class="buttons">
+            <button id="btn" class="b" onclick="showContent">Pizza</button>
+            <button id="btn" class="b" onclick="showContent">Sandwich</button>
+            <button id="btn" class="b" onclick="showContent">Plat</button>
+            <button id="btn" class="b" onclick="showContent">sweet</button>
+        </div>
+
+        <div class="right1">
+            <div class="iteme">
+                <h1>Pizza Margurita</h1>
+                <h3>Chef, kiri, mozzarella, gruyere</h3>
+                <h3><span class="prix">1000 da</span></h3>
+            </div><br>
+            <div class="iteme">
+                <h1>Pizza Poulet</h1>
+                <h3>Chef, kiri, mozzarella, gruyere</h3>
+                <h3><span class="prix">1000 da</span></h3>
+            </div><br>
+            <div class="iteme">
+                <h1>Pizza Fermiere</h1>
+                <h3>Chef, kiri, mozzarella, gruyere</h3>
+                <h3><span class="prix">1000 da</span></h3>
+            </div><br>
+            <div class="iteme">
+                <h1>Pizza fumé</h1>
+                <h3>Chef, kiri, mozzarella, viande hachee</h3>
+                <h3 class="pr">prix : <span class="prix">600da</span> </h3>
+            </div><br>
+            <div class="iteme">
+                <h1>Pizza chef</h1>
+                <h3>sauce gruyere, gruyere, poulet, viande hachee</h3>
+                <h3 class="pr">prix : <span class="prix">1000da</span> </h3>
+            </div><br>
+        </div>
+        <div class="vl"></div>
+        <div class="left1" style="width: 50%;">
+            <div class="iteme">
+                <h1>Pizza Margurita</h1>
+                <h3>Chef, kiri, mozzarella, gruyere</h3>
+                <h3><span class="prix">1000 da</span></h3>
+            </div><br>
+            <div class="iteme">
+                <h1>Pizza Poulet</h1>
+                <h3>Chef, kiri, mozzarella, gruyere</h3>
+                <h3><span class="prix">1000 da</span></h3>
+            </div><br>
+            <div class="iteme">
+                <h1>Pizza Fermiere</h1>
+                <h3>Chef, kiri, mozzarella, gruyere</h3>
+                <h3><span class="prix">1000 da</span></h3>
+            </div><br>
+            <div class="iteme">
+                <h1>Pizza fumé</h1>
+                <h3>Chef, kiri, mozzarella, viande hachee</h3>
+                <h3 class="pr">prix : <span class="prix">600da</span> </h3>
+            </div><br>
+            <div class="iteme">
+                <h1>Pizza chef</h1>
+                <h3>sauce gruyere, gruyere, poulet, viande hachee</h3>
+                <h3 class="pr">prix : <span class="prix">1000da</span> </h3>
+            </div><br>
+        </div>
+        <div style="height: 1000px;"></div>
     </section>
-    <section class="item">
-        <h1></h1>
-        <pizza></pizza>
-        <div class="menu-item"></div>
-    </section>
-    <section class="item">
-        <h1></h1>
-        <pizza></pizza>
-        <div class="menu-item"></div>
-    </section>
+    <div style="height: 400px;"></div>
+    <script >
+        document.addEventListener("scroll", () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  })
+
+  document.addEventListener("scroll", () => {
+  const header = document.querySelector('header');
+  const logo = document.getElementById('logo');
+  if (window.scrollY > 0) {
+    header.classList.add('scrolled');
+    logo.src = '/images/odelice.png'; 
+  } else {
+    header.classList.remove('scrolled');
+    logo.src = '/images/odelicen.png'; 
+  }
+});
+
+    </script>
+
 </body>
 </html>

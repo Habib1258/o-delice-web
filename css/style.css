@@ -14,6 +14,8 @@ a{
     
 }
 
+
+
 .ab{
     color: #001220;
     cursor: pointer;
@@ -367,8 +369,6 @@ section{
     margin-right: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    
-    
 }
 
 .menu-item:hover{
@@ -382,6 +382,45 @@ section{
     border-radius: 10px;
 }
 
+.menu-item1{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 170px;
+    background-color: #e6e5e3;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.menu-item1:hover{
+    filter: drop-shadow(8px 8px 10px #454545);
+    cursor: pointer;
+}
+
+
+.menu-item1 img{
+    width: 30%;
+    border-radius: 10px;
+}
+
+.buttons{
+    width: 40%;
+margin-bottom: 20px;
+}
+
+.b{
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'merriweather',sans-serif;
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline dashed;
+    cursor: pointer;
+}
 .ingre{
     
     flex-direction: column;

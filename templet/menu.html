@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style1.css">
     <link rel="icon" href="/images/odelice.png" >
     <script src="/js/index.js"></script>
@@ -30,92 +33,43 @@
 
     <section class="item">
         <div class="buttons">
-            <button id="btn" class="b" onclick="showContent">Pizza</button>
-            <button id="btn" class="b" onclick="showContent">Sandwich</button>
-            <button id="btn" class="b" onclick="showContent">Plat</button>
-            <button id="btn" class="b" onclick="showContent">sweet</button>
+            <button id="btn" class="category-btn" value="Pizza" onclick="showContent()">Pizza</button>
+            <button id="btn1" class="category-btn" value="Sandwich" onclick="showContent1()">Sandwich</button>
+            <button id="btn2" class="category-btn" value="Plat" onclick="showContent2()">Plat</button>
+            <button id="btn3" class="category-btn" value="Entree" onclick="showContent3()">Entree</button>
+            <button id="btn4" class="category-btn" value="Tacos" onclick="showContent4()">Tacos</button>
+            <button id="btn5" class="category-btn" value="Burgers" onclick="showContent5()">Burgers</button>
+            <button id="btn6" class="category-btn" value="Poutines" onclick="showContent6()">Poutines</button>
         </div>
+        
 
-        <div class="right1">
-            <div class="iteme">
-                <h1>Pizza Margurita</h1>
-                <h3>Chef, kiri, mozzarella, gruyere</h3>
-                <h3><span class="prix">1000 da</span></h3>
-            </div><br>
-            <div class="iteme">
-                <h1>Pizza Poulet</h1>
-                <h3>Chef, kiri, mozzarella, gruyere</h3>
-                <h3><span class="prix">1000 da</span></h3>
-            </div><br>
-            <div class="iteme">
-                <h1>Pizza Fermiere</h1>
-                <h3>Chef, kiri, mozzarella, gruyere</h3>
-                <h3><span class="prix">1000 da</span></h3>
-            </div><br>
-            <div class="iteme">
-                <h1>Pizza fumé</h1>
-                <h3>Chef, kiri, mozzarella, viande hachee</h3>
-                <h3 class="pr">prix : <span class="prix">600da</span> </h3>
-            </div><br>
-            <div class="iteme">
-                <h1>Pizza chef</h1>
-                <h3>sauce gruyere, gruyere, poulet, viande hachee</h3>
-                <h3 class="pr">prix : <span class="prix">1000da</span> </h3>
-            </div><br>
-        </div>
-        <div class="vl"></div>
-        <div class="left1" style="width: 50%;">
-            <div class="iteme">
-                <h1>Pizza Margurita</h1>
-                <h3>Chef, kiri, mozzarella, gruyere</h3>
-                <h3><span class="prix">1000 da</span></h3>
-            </div><br>
-            <div class="iteme">
-                <h1>Pizza Poulet</h1>
-                <h3>Chef, kiri, mozzarella, gruyere</h3>
-                <h3><span class="prix">1000 da</span></h3>
-            </div><br>
-            <div class="iteme">
-                <h1>Pizza Fermiere</h1>
-                <h3>Chef, kiri, mozzarella, gruyere</h3>
-                <h3><span class="prix">1000 da</span></h3>
-            </div><br>
-            <div class="iteme">
-                <h1>Pizza fumé</h1>
-                <h3>Chef, kiri, mozzarella, viande hachee</h3>
-                <h3 class="pr">prix : <span class="prix">600da</span> </h3>
-            </div><br>
-            <div class="iteme">
-                <h1>Pizza chef</h1>
-                <h3>sauce gruyere, gruyere, poulet, viande hachee</h3>
-                <h3 class="pr">prix : <span class="prix">1000da</span> </h3>
-            </div><br>
-        </div>
+        <div id="form-container" class="form-container"></div>
+        
+        
         <div style="height: 1000px;"></div>
     </section>
     <div style="height: 400px;"></div>
-    <script >
+    <script>
+         document.addEventListener("scroll", () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+        } else {
+        header.classList.remove('scrolled');
+        }
+        })
+
         document.addEventListener("scroll", () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 0) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  })
-
-  document.addEventListener("scroll", () => {
-  const header = document.querySelector('header');
-  const logo = document.getElementById('logo');
-  if (window.scrollY > 0) {
-    header.classList.add('scrolled');
-    logo.src = '/images/odelice.png'; 
-  } else {
-    header.classList.remove('scrolled');
-    logo.src = '/images/odelicen.png'; 
-  }
-});
-
+        const header = document.querySelector('header');
+        const logo = document.getElementById('logo');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+            logo.src = '/images/odelice.png'; 
+        } else {
+            header.classList.remove('scrolled');
+            logo.src = '/images/odelicen.png'; 
+        }
+        });
     </script>
 
 </body>

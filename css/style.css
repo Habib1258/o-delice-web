@@ -1,5 +1,7 @@
 body{
     background-color: #fcf7e6;
+    background-image: url("../images/b.jpg");
+    background-repeat: no-repeat;
     font-family: 'Merriweather', sans-serif;
     color: #333333;
     margin: 0;

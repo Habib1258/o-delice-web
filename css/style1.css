@@ -1,7 +1,7 @@
 body{
     background-image: url("/images/menul.png");
     background-repeat: no-repeat;
-    background-size: 1280px 400px;
+    background-size: 1580px 400px;
     font-family: 'Merriweather', sans-serif;
     color: #001220;
     margin: 0;
@@ -44,14 +44,14 @@ header nav li {
 }
 
 header nav li:hover {
-    background-color: #001220;
+    background-color: #ff4500;
     border-radius: 10px;
     color: #e6e5e3;
 }
 
 header nav .list-item-u:hover{
-    border-color: #001220;
-    background-color: #001220;
+    border-color: #ff4500;
+    background-color: #ff4500;
 }
 
 header.scrolled{
@@ -77,11 +77,20 @@ header.scrolled nav .list-item-u{
     border:solid 1px #ff4500;
 } 
 
+.younes{
+    width: 100%;
+    height: 200%;
+    opacity: 0.3;
+    z-index: -1;
+    position: absolute;
+    top: 400px;
+    left: 0;
+}
 
 li{
     float: right;
     text-align: right;
-    color: #001220;
+    color: #ff4500;
     gap: 20px;
     justify-content: space-between;
     padding: 10px;
@@ -116,8 +125,8 @@ li{
 .list-item-u{
 
     background-color: transparent;
-    color: #001220;
-    border:solid 1px #001220;
+    color: #ff4500;
+    border:solid 1px #ff4500;
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 5px;
@@ -167,13 +176,46 @@ li{
     text-align: center;
 }
 
-.left1{
-   width: 20%; 
-   margin-top: 70px;
-   margin-bottom: 100px;
-   height: auto;
-   float: left;
+
+
+.sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.titrei{
+    font-family: "Sevillana", cursive;
+    z-index: 2;
 }
+
+.titreir{
+    font-family: "Sevillana", cursive;
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-left: 150px;
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+.titreil{
+    font-family: "Sevillana", cursive;
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-left: 290px;
+    z-index: 2;
+}
+
+.left1{
+    width: 20%; 
+    margin-top: 70px;
+    margin-bottom: 100px;
+    height: auto;
+    float: left;
+ }
 
 .right1{
     width:30%; 
@@ -185,6 +227,19 @@ li{
     justify-content: center;
     align-content: center;
     border-radius: 10px;
+}
+
+.selected {
+    color: #ff4500;
+}
+
+.center{
+    margin-left: 600px;
+    width: 20%; 
+    margin-top: 70px;
+    margin-bottom: 100px;
+    height: auto;
+    float: left;
 }
 
 .ima{
@@ -224,13 +279,13 @@ h3{
 .buttons{
     width: 100%;
     margin-bottom: 20px;
-    margin-left: 100px;
+    margin-left: 350px;
     position: relative;
 }
 
 
 
-.b{
+.category-btn{
     padding: 10px;
     font-size: 22px;
     font-family: 'merriweather',sans-serif;
@@ -241,9 +296,14 @@ h3{
     cursor: pointer;
 }
 
-.b:hover{
+.category-btn:hover{
     color: #ff4500;
 }
+
+.category-btn::se{
+    color: #ff4500;
+}
+
 .ingre{
     
     flex-direction: column;
@@ -259,11 +319,45 @@ h3{
     display: flex;
     width: 10px;
     border-left: 3px solid #001220;
-    height: 850px;
+    height: 1600px;
     position: absolute;
     left: 50%;
     top: 600px;
     margin-left: 3px;
+}
+
+.vl1{
+    display: flex;
+    width: 10px;
+    border-left: 3px solid #001220;
+    height: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    margin-left: 3px;
+}
+
+.vl2{
+    display: flex;
+    width: 10px;
+    border-left: 3px solid #001220;
+    height: 1050px;
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    margin-left: 3px;
+}
+
+.vl3{
+    display: flex;
+    width: 10px;
+    border-left: 3px solid #001220;
+    height: 750px;
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    margin-left: 3px;
+    z-index: 2;
 }
 
 .loc{

@@ -555,3 +555,132 @@
                     logo.src = '/images/odelicen.png'; 
                   }
                 });
+
+
+                document.addEventListener("DOMContentLoaded", () => {
+                  const menu = document.querySelector(".menu");
+              
+                  const observer = new IntersectionObserver((entries) => {
+                      entries.forEach(entry => {
+                          if (entry.isIntersecting) {
+                              menu.classList.add("animate");
+                          } else {
+                              menu.classList.remove("animate");
+                          }
+                      });
+                  });
+              
+                  observer.observe(menu);
+              });
+
+              const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                       
+                })
+              })
+
+              const hiddenElement = document.querySelectorAll('.hidden');
+              hiddenElement.forEach((el) => observer.observe(el));
+
+
+
+
+              const observer1 = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                       
+                })
+              })
+
+              const hiddenElement1 = document.querySelectorAll('.hidden1');
+              hiddenElement1.forEach((el) => observer1.observe(el));
+
+
+              const observer2 = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show2');
+                    } else {
+                      entry.target.classList.remove('show2');
+                    }
+                })
+              })
+
+              const hiddenElement2 = document.querySelectorAll('.hidden2');
+              hiddenElement2.forEach((el) => observer2.observe(el));
+
+
+
+
+
+              const observer3 = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show3');
+                    } else {
+                      entry.target.classList.remove('show3');
+                    }
+                })
+              })
+
+              const hiddenElement3 = document.querySelectorAll('.hidden3');
+              hiddenElement3.forEach((el) => observer3.observe(el));
+
+
+
+
+              const observer4 = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show4');
+                    } else {
+                      entry.target.classList.remove('show4');
+                    }
+                })
+              })
+
+              const hiddenElement4 = document.querySelectorAll('.hidden4');
+              hiddenElement4.forEach((el) => observer4.observe(el));
+
+
+
+
+              const observer5 = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show5');
+                    } else {
+                      entry.target.classList.remove('show5');
+                    }
+                })
+              })
+
+              const hiddenElement5 = document.querySelectorAll('.hidden5');
+              hiddenElement5.forEach((el) => observer5.observe(el));
+
+
+
+
+              const observer6 = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show6');
+                    } else {
+                      entry.target.classList.remove('show6');
+                    }
+                })
+              })
+
+              const hiddenElement6 = document.querySelectorAll('.hidden6');
+              hiddenElement6.forEach((el) => observer6.observe(el));
+
+              

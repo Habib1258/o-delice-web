@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    
     <link rel="icon" href="/images/odelice.png" >
     <title>O'delice</title>
 </head>
@@ -13,16 +14,18 @@
 <body>
     
     <header id="header">
-        <a href="home.html"><img class="logo" src="/images/odelice.png" width="100%"></a>
+        <nav>
+            <img id="logo" class="logo" src="/images/odelice.png" width="100%">
         
-        <ul class="list">
-            <a href="log.html"><li class="list-item-u">LogIn</li></a>
-            <a href="about.html"><li class="list-item"><h5 >About</h5></li></a>
-            <a href="gallery.html"><li class="list-item"><h5 >Gallery</h5></li></a>
-            <a href="menu.html" ><li class="list-item"><h5 >Menu</h5></li></a>
-            <a href="home.html"><li class="list-item" ><h5 class="active">Home</h5></li></a>
-           
-        </ul>
+            <ul class="list">
+                <a href="log.html"><li class="list-item-u">Order Now</li></a>
+                <a href="about.html"><li class="list-item">About</li></a>
+                <a href="gallery.html"><li class="list-item">Gallery</li></a>
+                <a href="menu.html" ><li class="list-item">Menu</li></a>
+                <a href="home.html"><li class="list-item" >Home</li></a>
+            
+            </ul>
+        </nav>
     </header>    
 
     <section class="dark">
@@ -47,7 +50,7 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
         <a href="menu.html"><h1 class="title">Menu</h1></a>
         <section class="men">
             <div class="menu">
-                <div class="menu-item">
+                <div class="menu-item hidden">
                     <div class="imag">
                         <img src="/images/4fro.jpg" style="width: 110px; height:150px">
                     </div>
@@ -58,7 +61,7 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
                     </div>
     
                 </div>
-                <div class="menu-item">
+                <div class="menu-item hidden">
                     <div class="imag">
                         <img src="/images/fum.jpg" style="width: 110px; height:150px">
                     </div>
@@ -68,7 +71,7 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
                         <h2 class="pr">prix : <span class="prix">600da</span> </h2>
                     </div>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item hidden">
                     <div class="imag">
                         <img src="/images/napoli.jpg" style="width: 110px; height:150px">
                     </div>
@@ -80,7 +83,7 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
                 </div>
             </div>
             <div class="menu">
-                <div class="menu-item">
+                <div class="menu-item hidden">
                     <div class="imag">
                         <img src="/images/sanv.avif" style="width: 110px; height:150px">
                     </div>
@@ -91,7 +94,7 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
                     </div>
     
                 </div>
-                <div class="menu-item">
+                <div class="menu-item hidden">
                     <div class="imag">
                         <img src="/images/san_esc.jpg" style="width: 110px; height:150px">
                     </div>
@@ -101,7 +104,7 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
                         <h2 class="pr">prix : <span class="prix">350da</span> </h2>                    
                     </div>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item hidden">
                     <div class="imag">
                         <img src="/images/faji.jpg" style="width: 110px; height:150px">
                     </div>
@@ -113,7 +116,7 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
                 </div>
             </div>
             <div class="menu">
-                <div class="menu-item">
+                <div class="menu-item hidden">
                     <div class="imag">
                         <img src="/images/tacov.jpg" style="width: 110px; height:150px">
                     </div>
@@ -124,7 +127,7 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
                     </div>
     
                 </div>
-                <div class="menu-item">
+                <div class="menu-item hidden">
                     <div class="imag">
                         <img src="/images/tacop.jpg" style="width: 110px; height:150px">
                     </div>
@@ -134,7 +137,7 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
                         <h2 class="pr">prix : <span class="prix"> 650da</span> </h2>                
                     </div>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item hidden">
                     <div class="imag">
                         <img src="/images/taco.jpg" style="width:110px; height:150px">
                     </div>
@@ -146,7 +149,8 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
                 </div>
             </div>
             <br><br><br>
-            <a href=""><h2 class="mor">Full menu</h2></a>
+            <a href="menu.html"><h2 class="mor">Full menu</h2></a>
+            
             
         </section>
         
@@ -162,12 +166,12 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
     </section>
     <section class="gallery">
         <div class="gal">
-            <img src="/images/2024_05_28_17_46_IMG_3129.JPG">
-            <img src="/images/2024_05_28_17_46_IMG_3130.JPG">
-            <a  class="blu" href="gallery.html"><img class="show" src="/images/2024_05_28_17_47_IMG_3131.JPG"></a>
-            <a href="gallery.html"><h3 class="hide">Show <br>more</h3></a>
+            <div class="logo1 hidden1"><img src="/images/2024_05_28_17_46_IMG_3129.JPG"></div>
+            <div class="logo1 hidden1"><img src="/images/2024_05_28_17_46_IMG_3130.JPG"></div>
+            <div class="logo1 hidden1"><a  class="blu" href="gallery.html"><img class="show" src="/images/2024_05_28_17_47_IMG_3131.JPG"></a>
+                <a href="gallery.html"><h3 class="hide">Show <br>more</h3></a></div>
         </div>
-        <div class="skil">
+        <div class="wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
                 <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
@@ -196,9 +200,37 @@ Dive into our world of exquisite flavors, innovative recipes, and expert tips de
 
         </div>
     </section>
+    <div class="fot">Powered by Habib</div>
     
 
 
     </div>
+    <script>
+        document.addEventListener("scroll", () => {
+       const header = document.querySelector('header');
+       if (window.scrollY > 0) {
+       header.classList.add('scrolled');
+       } else {
+       header.classList.remove('scrolled');
+       }
+       })
+
+       document.addEventListener("scroll", () => {
+       const header = document.querySelector('header');
+       const logo = document.getElementById('logo');
+       if (window.scrollY > 0) {
+           header.classList.add('scrolled');
+           logo.src = '/images/odelice.png'; 
+       } else {
+           header.classList.remove('scrolled');
+           logo.src = '/images/odelicen.png'; 
+       }
+       });
+
+       
+   </script>
+
+
+    <script src="/js/index.js"></script>
 </body>
 </html>
